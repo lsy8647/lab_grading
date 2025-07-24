@@ -199,7 +199,7 @@ class AutoGrader:
 
 # 전역 채점 시스템 인스턴스 생성
 # ⚠️ 여기를 본인의 GitHub 저장소 URL로 수정하세요! (한 번만!)
-REPO_URL = "https://raw.githubusercontent.com/lsy8647/lab_grading/refs/heads/main/"
+REPO_URL = "https://raw.githubusercontent.com/your-username/python-lab-grading/main"
 grader = AutoGrader(REPO_URL)
 
 def submit_answer(problem_id: str, answer: Any, lab_name: str = "test1"):
@@ -223,7 +223,11 @@ def submit_answer(problem_id: str, answer: Any, lab_name: str = "test1"):
         print(f"🔍 참고: {result['expected']}")
     print("=" * 40)
     
-    return result
+    # 정답일 때는 딕셔너리 정보를 반환하지 않음
+    if result['correct']:
+        return None
+    else:
+        return result
 
 def create_lab_functions(lab_name: str, num_problems: int):
     """
