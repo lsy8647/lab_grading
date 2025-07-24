@@ -1,0 +1,17 @@
+{
+  "problem_1": {
+    "type": "series_dtype",
+    "answer": {
+      "values": [3.0, 5.0, 7.0, 9.0, 11.0],
+      "dtype": "float32"
+    },
+    "display_answer": "dtype이 float32인 Series([3, 5, 7, 9, 11])",
+    "description": "특정 dtype으로 Series 생성하는 문제"
+  },
+  "problem_2": {
+    "type": "series_values",
+    "answer": ["가", "나", "다"],
+    "display_answer": "Series(['가', '나', '다'])",
+    "description": "문자열 리스트로 Series 생성하는 문제"
+  }
+}
