@@ -255,13 +255,6 @@ def create_lab_functions(lab_name: str, num_problems: int):
 # 사용법을 출력하는 함수
 def show_usage():
     """사용법 안내"""
-    print("🎯 채점 시스템 사용법:")
-    print("1. create_lab_functions('실습명', 문제개수) 호출")
-    print("2. 문제 해결 후 check_problem_X(답안) 호출")
-    print("\n📚 예시:")
-    print("create_lab_functions('test1', 2)  # test1 실습, 2문제")
-    print("check_problem_1(answer1)         # 문제 1 채점")
-    print("check_problem_2(answer2)         # 문제 2 채점")
 
 print("✅ 스마트 채점 시스템이 로드되었습니다!")
 show_usage()
