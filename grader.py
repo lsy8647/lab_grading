@@ -199,7 +199,7 @@ class AutoGrader:
 
 # 전역 채점 시스템 인스턴스 생성
 # ⚠️ 여기를 본인의 GitHub 저장소 URL로 수정하세요! (한 번만!)
-REPO_URL = "https://raw.githubusercontent.com/your-username/python-lab-grading/main"
+REPO_URL = "https://raw.githubusercontent.com/lsy8647/lab_grading/refs/heads/main/"
 grader = AutoGrader(REPO_URL)
 
 def submit_answer(problem_id: str, answer: Any, lab_name: str = "test1"):
